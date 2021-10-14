@@ -11,7 +11,7 @@ node {
            def currentResult = currentBuild.result
            echo "always code is executed"
            if(currentbuild.previousBuild != null) {
-                def currentResult = currentBuild.previousBuild.result
+                def previousResult = currentBuild.previousBuild.result
                 if (previousResult != null && previousResult != currentResult) {
                    echo 'changed() code is executed'                                                       
                 }
