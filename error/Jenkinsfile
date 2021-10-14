@@ -1,8 +1,9 @@
 node{
-        stage('Build'){
-                retry(3){
-                        error "Error statement just got executed"
+        retry(3){
+                stage('Build'){
+                        error "Error statement just got executed - retry stage"
                 }
         }
 }
+
 
