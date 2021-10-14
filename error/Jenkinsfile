@@ -1,6 +1,7 @@
 node{
         retry(3){
                 stage('Build'){
+                        echo "This is Build Stage ..."
                         error "Error statement just got executed - retry stage"
                 }
         }
